@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-spotlight {
+  text-shadow: 0 0 20px rgba(75, 0, 130, 0.7), 0 0 40px rgba(75, 0, 130, 0.5);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.text-spotlight-hover:hover {
+  text-shadow: 0 0 80px rgba(75, 0, 130, 0.7), 0 0 90px rgba(75, 0, 130, 0.5);
+}

@@ -4,7 +4,6 @@ import NavBar from "../../components/NavBar";
 export default function Dashboard() {
   return (
     <div className="h-screen w-screen overflow-hidden">
-      <NavBar />
       <div className="mx-auto mt-96 w-screen max-w-2xl">
         <div className="text-center text-3xl text-white">
           <span className="text-indigo-200">Welcome to...</span>

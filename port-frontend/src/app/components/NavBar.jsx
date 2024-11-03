@@ -1,13 +1,26 @@
+import Link from "next/link";
+
 export default function NavBar() {
+  const linkClasses =
+    "relative text-center px-4 py-2 transition duration-300 ease-in-out text-spotlight text-spotlight-hover hover:text-indigo-400";
+
   return (
     <main className="grid grid-cols-5 w-screen inset-x-0 top-0 fixed place-items-center items-center p-8">
-      <div className="text-center hover:text-indigo-400 hover:bold hover:scale-105 transition duration-300 ease-in-out">
+      <Link href="/" className={linkClasses}>
         Home
-      </div>
-      <div className="text-center">About</div>
-      <div className="text-center">Projects</div>
-      <div className="text-center">Experiences</div>
-      <div className="text-center">Contact</div>
+      </Link>
+      <Link href="/about" className={linkClasses}>
+        About
+      </Link>
+      <Link href="/projects" className={linkClasses}>
+        Projects
+      </Link>
+      <Link href="/experiences" className={linkClasses}>
+        Experiences
+      </Link>
+      <Link href="/contact" className={linkClasses}>
+        Contact
+      </Link>
     </main>
   );
 }
